@@ -29,9 +29,6 @@ ExecutionHandler → FillEvent
 ↓
 Portfolio 자산 업데이트
 
-yaml
-코드 복사
-
 ---
 
 ## 프로젝트 구조
@@ -42,9 +39,6 @@ backtester
 ├─ strategy.py # 매매 전략 모음
 ├─ portfolio.py # 자산 및 포지션 관리
 └─ execution.py # 주문 체결 시뮬레이터
-
-yaml
-코드 복사
 
 ---
 
