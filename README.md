@@ -19,27 +19,29 @@
 ---
 
 ## 시스템 아키텍처
+```text
 MarketEvent 발생
-↓
+   ↓
 Strategy → SignalEvent
-↓
+   ↓
 Portfolio → Order
-↓
+   ↓
 ExecutionHandler → FillEvent
-↓
+   ↓
 Portfolio 자산 업데이트
-
+```
 ---
 
 ## 프로젝트 구조
+```text
 backtester
-├─ engine.py # 이벤트 흐름 제어 (메인 루프)
-├─ data.py # 시세 데이터 스트리밍
-├─ event.py # Market / Signal / Order / Fill 이벤트 정의
-├─ strategy.py # 매매 전략 모음
-├─ portfolio.py # 자산 및 포지션 관리
-└─ execution.py # 주문 체결 시뮬레이터
-
+ ├─ engine.py          # 이벤트 흐름 제어 (메인 루프)
+ ├─ data.py            # 시세 데이터 스트리밍
+ ├─ event.py           # Market / Signal / Order / Fill 이벤트 정의
+ ├─ strategy.py        # 매매 전략 모음
+ ├─ portfolio.py       # 자산 및 포지션 관리
+ └─ execution.py       # 주문 체결 시뮬레이터
+```
 ---
 
 ## 구현된 전략
