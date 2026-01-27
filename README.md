@@ -81,7 +81,9 @@ backtester
 - **Market Data**: Yahoo Finance (yfinance)
 - **Visualization**: Matplotlib
 
-- > 이동평균 교차 전략 실행 결과 예시  
+---
+
+## 이동평균 교차 전략 실행 결과 예시  
 > (AAPL, 단일 종목, 거래 비용 미반영)
 
 ![Equity Curve Example](Backtester_Example.PNG)
